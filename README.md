@@ -30,7 +30,61 @@ Ex: Versão 1.0
 
 ## Sobre o projeto
 
-Ex: Este é um projeto de sistema de login.
+A empresa CINEMAX está com problemas no seu sistema de venda de ingressos. O presidente
+da empresa, insatisfeito com os problemas ocorridos, resolveu solicitar um novo sistema, você
+foi contratado para elaborar um algoritmo, e seu respectivo programa em C para controlar as
+vendas dos ingressos do cinema. Como a sua solução (algoritmo/programa) será utilizada para
+venda em diversos filmes, o seu algoritmo/programa, deverá solicitar o nome do filme, que não
+pode ser nulo, e a quantidade de poltronas disponíveis na sala onde o filme estará disponível.
+Sabe-se que a quantidade de poltronas da sala de cinema será sempre maior ou igual a 100, mas
+não chegará a 500, e isto depende da capacidade de cada sala.
+
+Os ingressos serão vendidos por meio de reservas que poderão ser confirmadas ou canceladas
+posteriormente.
+
+O valor do ingresso será diferenciado (valores em reais (R$)), de acordo com a idade do
+interessado (até 12 anos) ou a categoria do benefício de meia entrada (E - estudantes, P -
+pessoas com deficiência, I - idosos, D - doadores de sangue) – nestes casos deverá ser concedido
+o valor 50% de desconto no ingresso. O valor do ingresso (sem descontos) deverá ser solicitado
+no início da execução de sua solução, somente uma única vez, após a entrada dos dados. Estes
+valores serão utilizados por seu algoritmo/programa até que o mesmo termine.
+
+As entradas e validações deverão ser realizadas por subprogramas específicos (leValidaValor,
+leValidaIdade, leValidaFilme, leValidaCadeira), devendo o cálculo de cada ingresso ser obtido
+pelo subprograma calculaIngresso respeitando todas as restrições indicadas anteriormente.
+
+1. Verificar a ocupação de uma determinada sala, cadeiras disponíveis (D), com
+reservas (R) ou com vendas confirmadas (C), por meio da apresentação do mapa dos
+poltronas em uma janela limpa que mostre todos os lugares possíveis na sala
+selecionada (usar R para reserva, C para venda confirmada ou D para disponível);
+
+2. Efetuar uma reserva por meio do fornecimento do número da cadeira disponível.
+Cada reserva receberá um número único para sua identificação, não podendo este
+número ser repetido em hipótese alguma, sendo seu valor inicial 1;
+
+3. Realizar o cancelamento de uma reserva por meio do fornecimento de seu número
+único de identificação. Para que o cancelamento seja realizado a reserva deve
+existir;
+
+4. Efetivar a confirmação de venda de um ingresso (ou mais) por meio do fornecimento
+de seu número único de identificação. Para que a confirmação seja realizada a
+reserva deve existir;
+
+5. Mostrar a quantidade de cadeiras com reservas, com vendas confirmadas e
+disponíveis, além do valor total em reais das vendas já confirmadas para
+determinado filme.
+
+O cálculo do valor a ser pago por cada ingresso solicitado deverá ser apresentado logo após ser
+efetuada uma reserva, ou seja, após o fornecimento dos dados corretos e validados do comprador. O valor deverá ser apresentado por um procedimento que simplesmente mostrará o cálculo do ingresso será obtido pelo subprograma calculaIngresso e o mostrará na janela de execução para análise e confirmação do comprador. Caso o comprador interessado desista do reserva, posteriormente, ele poderá cancelar.
+
+O conteúdo de pesquisa relacionado a este trabalho final acontecerá sobre o uso de cores no
+programa em C que será entregue. Sua implementação deverá no mínimo efetuar a
+implementação das cores indicadas sobre a situação de cada cadeira do cinema, devendo ser
+respeitada, exatamente, as cores das letras que indicam:
+
+1. R para reserva com a cor vermelha para a letra R;
+2. C para venda confirmada com a cor azul para a letra C;
+3. D para disponível com a cor verde para a letra D.
 
 ## Casos de Uso do projeto
 
